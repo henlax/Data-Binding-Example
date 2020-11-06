@@ -9,8 +9,12 @@ public class UIText : MonoBehaviour
     public Text Text;
     public string varName;
     
-    private void Start()
+    private void Awake()
     {
-        UIConnector.GetStringVar(varName).OnChange.AddListener(value => Text.text = value);
+        if (!UIConnector.Validate(UIConnector, varName)) return;
+
+        var stringVar= UIConnector.GetStringVar(varName);
+        Text.text = stringVar.Get();
+        stringVar.OnChange.AddListener(value => Text.text = value);
     }
 }

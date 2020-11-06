@@ -10,8 +10,10 @@ public class UITextInput : MonoBehaviour
     public InputField TextInput;
     public string varName;
 
-    void Start()
+    void Awake()
     {
+        if (!UIConnector.Validate(UIConnector, varName)) return;
+
         TextInput.onValueChanged.AddListener(value =>
         {
             UIConnector.GetStringVar(varName).Set(value);
