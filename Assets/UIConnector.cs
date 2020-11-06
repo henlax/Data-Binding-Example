@@ -166,7 +166,7 @@ public class UIConnector : MonoBehaviour
 
         if (string.IsNullOrEmpty(varName))
         {
-            Debug.LogError("Needvar name can't be empty");
+            Debug.LogError("var name can't be empty");
             return false;
         }
         return true;

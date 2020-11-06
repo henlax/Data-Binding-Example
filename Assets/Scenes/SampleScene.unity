@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 1657246964}
   - component: {fileID: 1657246963}
   m_Layer: 5
-  m_Name: Text
+  m_Name: bottom text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1148,7 +1148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press "a" to add a lits member. and press "r" to remove
+  m_Text: Press "a" to add a list member. and press "r" to remove
 --- !u!222 &1657246964
 CanvasRenderer:
   m_ObjectHideFlags: 0
